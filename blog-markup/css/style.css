@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 21px;
+	line-height: 1.5;
+}
+
+.container {
+	width: 33.33rem;
+	margin: 0 auto;
+}
+
+nav.index {
+	margin-top: 1.43rem;
+	margin-bottom: 2.86rem;
+}
+
+section p, figure, h3, ul {
+	margin-top: 1.43rem;
+}
+
+section {
+	margin-top: 1.76rem;
+}
+
+section h2+p, h3+p {
+	margin-top: 0.38rem;
+}
+
+nav ul li {
+	margin-top: 
+}
+
+section ul li {
+	margin-bottom: 0.67rem;
+}
+
+#fake figure img {
+	width: 25rem;
+}
+
+#youreye figure.size img {
+	width: 10rem;
+}
+
+#youreye h2, #essential h2 {
+	margin-top: 3.1rem;
+}
+
+#essential img {
+	width: 10rem;
+}
+
+figure img {
+	width: 33.33rem;
+}
+
+figcaption {
+	margin-top: 0.48rem;
+}
+
+.profile {
+	border-radius: 50%;
+	width: 2.86rem;
+	height: 2.86rem;
+}
+
+.wide {
+	width: 100%;
+}
+
+footer {
+	margin-top: 2.86rem;
+}

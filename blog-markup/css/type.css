@@ -1,0 +1,120 @@
+h1, h2, h3, p, a {
+	color: rgba(0,0,0,0.8);
+}
+
+h1,h2,h3 {
+	font-family: "jaf-bernino-sans",sans-serif;
+}
+
+h1 {
+	font-size: 1.33rem;
+	font-weight: 700;
+	letter-spacing: -.022em;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 1.71rem;
+	font-weight: 700;
+	letter-spacing: -.02em;
+	line-height: 1.15;
+}
+
+h3 {
+	font-size: 1.33rem;
+	font-weight: 300;
+	color: rgba(0,0,0,0.44);
+    letter-spacing: -.022em;
+    line-height: 1.22;
+}
+
+p, li {
+	font-size: 1rem;
+	font-family: "freight-text-pro",serif;
+	letter-spacing: -.004em;
+	line-height: 1.5;
+	font-weight: 300;
+}
+
+header .art-header p {
+	font-family: "jaf-bernino-sans",sans-serif;
+	font-weight: 300;
+    font-style: 400;
+    font-size: 1.33rem;
+    line-height: 1.22;
+    letter-spacing: -.022em;
+}
+
+figcaption, .name, .intro{
+	font-family: "jaf-bernino-sans", sans-serif;
+	letter-spacing: 0;
+	line-height: 1.4;
+}
+
+.name {
+	font-weight: 500; 
+	color: rgba(0,0,0,0.8);
+}
+
+
+.intro {
+	font-size: 0.62rem;
+}
+
+figcaption, .intro {
+	font-weight: 300;
+	color: rgba(0,0,0,0.6);
+}
+
+figure {
+	text-align: center;
+}
+
+.name {
+	font-weight: 500; 
+	color: rgba(0,0,0,0.8);
+}
+
+em {
+	font-style: italic;
+	font-weight: 400;
+}
+em.bold {
+	font-style: normal;
+	font-weight: bold;
+}
+
+ul li a, footer a {
+	text-decoration: none;
+}
+
+ul li a:hover, footer a {
+	color: #00ab6b;
+}
+
+footer p {
+	font-family: "jaf-bernino-sans",sans-serif;
+	font-size: 0.67rem;
+	font-weight: 300;
+}
+
+a.link {
+	text-decoration: none;
+    box-shadow: inset 0 0px 0 white, inset 0 -1px 0 black
+}
+
+a.user-link {
+	text-decoration: none;
+	color: #00ab6b;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+
+.italic, .italic a {
+	font-family: "freight-text-pro",serif;
+	font-style: italic;
+	font-weight: 300;
+}

@@ -1,51 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 6]><html lang="ko-KR" class="ie6"><![endif]-->
+<!--[if IE 7]><html lang="ko-KR" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko-KR" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="ie9"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HyunCoding</title>
-    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/type.css">
-    <link rel="stylesheet" type="text/css" href="css/layout.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+	<title>Pixel Density, Demystified | Front-end Dev School Practice</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="reviews">
+	<meta name="keywords" content="review,frontend">
+	<meta name="author" content="jiseung roh">
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../../fav-jiseung.png">
+	<script src="https://use.typekit.net/sbe1cab.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="art-header">
-                <h1>Pixel Density, Demystified</h1>
-                <p>How pixel density works and how it affects your designs.</p>
-            </div>
-            <div class="author">
-                <img src="https://cdn-images-1.medium.com/fit/c/200/200/1*aVnImjuBof_3I3UFySH26g.jpeg" alt="Peter Nowell" class="profile">
-                <div class="author-profile">
-                    <p class="name">Peter Nowell</p>
+	<!-- header-->
+	<header>
+		<div class="container">
+			<div class="art-header">
+				<h1>Pixel Density, Demystified</h1>
+				<p>How pixel density works and how it affects your designs.</p>
+			</div>
+			<div class="author">
+				<img src="https://cdn-images-1.medium.com/fit/c/200/200/1*aVnImjuBof_3I3UFySH26g.jpeg" alt="Peter Nowell" class="profile">
+				<div class="author-profile">
+					<p class="name">Peter Nowell</p>
 					<p class="intro">Designer based in San Francisco, designing apps, websites, brand identities, and more. Creator of Sketch Master—pro training courses for Sketch. pnowell.com</p>
 				</div>
-            </div>
-        </div>    
-            <img src="https://cdn-images-1.medium.com/max/2000/1*UgW8HxkCJUST8Hu2ghWfmQ@2x.jpeg" alt="pixel density" class="wide">
-    </header>
-        <main>
-            <h2>index.</h2>
-            <ul>
-                <li>Introduction</li>
-                <li>PT & DP</li>
-                <li>Controlled Chaos</li>
-                <li>Design in vector.Design at 1x.</li>
-                <li>Fake it 'till ya make it!</li>
-                <li>Your Eye's Perception of Scale</li>
-                <li>Sanity Check?</li>
-                <li>Essential Resources</li>
-            </ul>
-            <section>
-				<header>
+			</div>
+		</div>
+			<img src="https://cdn-images-1.medium.com/max/2000/1*UgW8HxkCJUST8Hu2ghWfmQ@2x.jpeg" alt="pixel density" class="wide">
+	</header>
+	<!-- /header-->
+
+	
+	<main>
+		<div class="container">
+			<nav class="index">
+				<h2>Index.</h2>
+				<ul>
+					<li><a href="#header">Introduction</a></li>
+					<li><a href="#ptdp">PT &amp; DP</a></li>
+					<li><a href="#controlled">Controlled Chaos</a></li>
+					<li><a href="#designinvector">Design in vector.Design at 1x.</a></li>
+					<li><a href="#fake">Fake it 'till ya make it!</a></li>
+					<li><a href="#youreye">Your Eye's Perception of Scale</a></li>
+					<li><a href="#sanity">Sanity Check?</a></li>
+					<li><a href="#essential">Essential Resources</a></li>
+				</ul>
+			</nav>
+			<!-- ./nav -->
+		
+			<section>
+				<header id="header">
 					<p>
 						Pixel density refers to how many pixels have been squeezed into a physical amount of space (often an inch). On the first Mac, there were 72 pixels per inch — which may sound like a lot but it actually required that graphics conform to these huge pixels.
 					</p>
 					<figure>
 						<img src="https://cdn-images-1.medium.com/max/1600/1*bIx72q_ehX4mlHkInGor8Q.png" alt="Icons for the orginaml Mac">
-						<figcaption>Icons for the original Mac, designed by <a href="http://www.kareprints.com/">Susan Kare</a>.</figcaption>
+						<figcaption>Icons for the original Mac, designed by <a href="http://www.kareprints.com/" class="user-link">Susan Kare</a>.</figcaption>
 					</figure>
 					<p>
 						Screen technology has evolved tremendously since then, and now even the most basic computer screens are somewhere in the 115 to 160 pixel per inch (“ppi”) range. But a new chapter in this story began in 2010 when Apple introduced an iPhone with a Retina Display — a super crisp screen that doubled the pixels per inch. The result was graphics with so much more clarity than we’d ever seen.
@@ -59,12 +79,14 @@
 					</p>
 					<figure>
 						<img src="https://cdn-images-1.medium.com/max/1600/1*rRg_kWDs0C7goRnuaG7Xcw@2x.png" alt="pre-retina display versus retina display">
-                    </figure>
-                </header>
-                <section>
+					</figure>
+				</header>
+				<!-- /.header -->
+				
+				<section id="ptdp">
 					<h2>PT &amp; DP</h2>
 					<p>
-						But this isn’t just for Apple devices of course, these days every operating system — desktop or mobile — supports high ppi/dpi screens. Google has defined their own <a href="https://material.google.com/layout/units-measurements.html#units-measurements-pixel-density">density-independent unit for Android.</a> They aren’t called “points”, they’re called “DIPs”, which stands for density-independent pixels. The shorthand is “dp”. They’re not <em>exactly</em> equivalent to points in iOS, but the idea behind them is the same. They’re a universal unit of measurement, that can be converted to pixels using a device’s scaling ratio (2x, 3x, etc.).
+						But this isn’t just for Apple devices of course, these days every operating system — desktop or mobile — supports high ppi/dpi screens. Google has defined their own <a href="https://material.google.com/layout/units-measurements.html#units-measurements-pixel-density" class="link">density-independent unit for Android.</a> They aren’t called “points”, they’re called “DIPs”, which stands for density-independent pixels. The shorthand is “dp”. They’re not <em>exactly</em> equivalent to points in iOS, but the idea behind them is the same. They’re a universal unit of measurement, that can be converted to pixels using a device’s scaling ratio (2x, 3x, etc.).
 					</p>
 					<p>
 						You may be wondering about the <em>physical size</em> of a point. There’s actually very little practical need for UI designers to worry about it, because we have minimal control over device-specific alterations. Designers just need to trust that the device maker has settled on a pixel density that is appropriate for that device, and focus our attention on preparing design assets at 1x, 2x, 3x, or any other ratio. But if you’re really curious, know that on Apple devices there’s no <em>constant</em> conversion between inches and points. In other words there’s no single pixel density that represents 1 point — it’s dependent on the specific device (see Perception of Scale section below). On iOS, a point varies from 132 points per inch to 163 points per inch. On Android, DIPs are always based off 160 ppi.
@@ -72,7 +94,7 @@
 				</section>
 				<!-- /.ptdp -->
 				
-				<section>
+				<section id="controlled">
 					<h2>Controlled Chaos</h2>
 					<p>
 						Get ready for the reality check. In the early days of high resolution mobile devices, pixel density was as simple as 1x or 2x. But now it’s absolutely nuts — there are many pixel densities to support. Android is a perfect example: at the time of this article there are <em>six</em> common pixel densities across all the different device makers. This means that an icon that <em>appears to be</em> the same size on all of these screens actually requires 6 different graphics. For Apple devices it’s more like two or three different graphics.
@@ -83,7 +105,7 @@
 				</section>
 				<!-- /.controlled -->
 				
-				<section>
+				<section id="designinvector">
 					<h2>Design in vector.Design at 1x.</h2>
 					<p>
 						There are a couple practical lessons to take away from all of this. To begin with, we should all be designing with vector shapes. That allows our interfaces, icons, and graphics to scale to any size.
@@ -95,15 +117,15 @@
 						The second lesson is that we should all be designing at 1x scale. In other words, design using <em>points</em> for all measurements, then scale up to various higher pixel densities when exporting… as opposed to designing at a device’s final <em>pixel</em> dimensions (2x, 3x, etc.) and getting into all kinds of trouble during export. Because scaling a 2x graphic 150% to generate a 3x graphic produces blurry results, but scaling a 1x graphic 200% and 300% retains visual clarity.
 					</p>
 					<p>
-						Mockups for a standard-sized iPhone should be 375×667, not 750×1334 which is the resolution they’re actually displayed at. Most design tools don’t distinguish points from pixels (<a href="https://www.flinto.com/mac" >Flinto</a> is the only exception I’m aware of), so it’s up to designers to pretend that units in pixels are actually points, then have the flexibility to export at two or three times the size.
+						Mockups for a standard-sized iPhone should be 375×667, not 750×1334 which is the resolution they’re actually displayed at. Most design tools don’t distinguish points from pixels (<a href="https://www.flinto.com/mac" class="link">Flinto</a> is the only exception I’m aware of), so it’s up to designers to pretend that units in pixels are actually points, then have the flexibility to export at two or three times the size.
 					</p>
 				</section>
 				<!-- /.designinvector -->
 				
-				<section>
+				<section id="fake">
 					<h2>Fake it 'till ya make it!</h2>
 					<p>
-						This is a bit more advanced, but it’s worth mentioning: <em>sometimes devices fake it.</em> They pretend their pixel-to-point ratio is a common one, like 3x, but it’s actually 2.61x and the image is scaled to 3x for convenience. This is what the iPhone Plus currently does. It shrinks an interface made at 1242×2208 down to fit on a 1080×1920 screen (the phone’s graphics chip performs this scaling in real-time).
+						This is a bit more advanced, but it’s worth mentioning: <em class="bold">sometimes devices fake it.</em> They pretend their pixel-to-point ratio is a common one, like 3x, but it’s actually 2.61x and the image is scaled to 3x for convenience. This is what the iPhone Plus currently does. It shrinks an interface made at 1242×2208 down to fit on a 1080×1920 screen (the phone’s graphics chip performs this scaling in real-time).
 					</p>
 					<figure>
 						<img src="https://cdn-images-1.medium.com/max/1200/1*PBTijdQjYoS7Uoux4Kc2XQ@2x.png" alt="iphone's scaling down">
@@ -112,17 +134,17 @@
 					<p>
 						Because the image is only being scaled down a little bit (87%), the result still looks decent — a 1px line on a nearly-3x screen still looks pretty darn crisp. And chances are, although I have zero inside information, Apple will probably release a true 3x iPhone Plus in the future as those hardware components become viable for a product made in such outrageous quantities. The current iPhone Plus is probably faking it until it makes it.
 					</p>
-					<p>
-						(<a href="https://medium.com/@brucewangsg">Bruce Wang</a> wrote a <a href="https://medium.com/we-are-appcepted/the-curious-case-of-iphone-6-1080p-display-b33dac5bbcb6#.eqciytk6l">great article</a> about the iPhone 6 Plus’s screen.)
+					<p class="italic">
+						(<a href="https://medium.com/@brucewangsg" class="user-link">Bruce Wang</a> wrote a <a href="https://medium.com/we-are-appcepted/the-curious-case-of-iphone-6-1080p-display-b33dac5bbcb6#.eqciytk6l" class="link">great article</a> about the iPhone 6 Plus’s screen.)
 					</p>
 					<p>
-						Is this scaling-by-non-<a href="https://en.wikipedia.org/wiki/Integer">integers</a> approach acceptable? Ultimately, the proof is in the pudding; is the scaling subtle enough to be imperceptible? Many Android devices also use scaling to achieve a more standard pixel-to-point ratio, and unfortunately some of them do it really poorly. Scaling like this is undesirable because everything that you designed to be crisp and pixel-perfect at a certain scale will become blurry due to interpolation (i.e. a 1px line becomes 1.15 pixels). Even if you’re not a fanatical pixel perfection nerd like I am, there’s no denying the fact that design elements need to align with full pixels in order to appear crisp to our eyes. Unfortunately as pixel densities enter the 4x and above range, the blurriness caused by non-integer scaling becomes far more difficult to perceive, so I predict that device makers will be using this approach more as time goes on. We can only hope that the performance drawback of scaling will deter them!
+						Is this scaling-by-non-<a href="https://en.wikipedia.org/wiki/Integer" class="link">integers</a> approach acceptable? Ultimately, the proof is in the pudding; is the scaling subtle enough to be imperceptible? Many Android devices also use scaling to achieve a more standard pixel-to-point ratio, and unfortunately some of them do it really poorly. Scaling like this is undesirable because everything that you designed to be crisp and pixel-perfect at a certain scale will become blurry due to interpolation (i.e. a 1px line becomes 1.15 pixels). Even if you’re not a fanatical pixel perfection nerd like I am, there’s no denying the fact that design elements need to align with full pixels in order to appear crisp to our eyes. Unfortunately as pixel densities enter the 4x and above range, the blurriness caused by non-integer scaling becomes far more difficult to perceive, so I predict that device makers will be using this approach more as time goes on. We can only hope that the performance drawback of scaling will deter them!
 					</p>
 				</section>
 				<!-- /.fake -->
 				
-				<section>
-					<figure>
+				<section id="youreye">
+					<figure class="size">
 						<img src="https://cdn-images-1.medium.com/max/1600/1*oVTogZXx_goEHOM404d3qA@2x.png" alt="perception scale">
 					</figure>
 					<h2>Your Eye's Perception of Scale</h2>
@@ -130,9 +152,9 @@
 						Let’s put all this pixel density stuff aside for a minute, and consider this question: should a button always be the same physical size across devices? Of course we’re just using a button as an example, but we could be talking about an icon, or text, or a toolbar. Should these be a consistent size across all devices? The general consensus is that it depends.
 					</p>
 					<ul>
-						<li>It depends on the <a href="https://bjango.com/articles/interactiondensity/">precision of the <em>input method</em></a> (i.e. touch vs. cursor)</li>
-						<li>It depends on the <em>physical size</em> of the screen</li>
-						<li>And it depends on your <em >distance</em> from the screen</li>
+						<li>It depends on the <a href="https://bjango.com/articles/interactiondensity/" class="link">precision of the <em class="bold">input method</em></a> (i.e. touch vs. cursor)</li>
+						<li>It depends on the <em class="bold">physical size</em> of the screen</li>
+						<li>And it depends on your <em class="bold">distance</em> from the screen</li>
 					</ul>
 					<p>
 						Those last two kind of go hand-in-hand; because a tablet has a bigger screen than a  phone, we hold it farther away. Then you get to a laptop, then a desktop, then a TV… the distance increases with screen size.
@@ -149,13 +171,13 @@
 					<p>
 						Here’s a less dramatic and very real example of this: the app icons on a tablet need to be larger than those on your phone, and this is accomplished in two ways: by using a lower pixel density and by changing the dimensions of the button (e.g. in points).
 					</p>
-					<article>
+					<article id="sub">
 						<h3>Lower Pixel Density</h3>
 						<p>
-							Larger screens that we use at a distance tend to have lower pixel densities. A TV might be as low as 40 pixels per inch! For typical TV-viewing that’s permissible. An iPad’s retina display is around 264ppi while an iPhone’s retina display is 326ppi. <em>Because the pixels on an iPad are larger (the screen is less dense), the entire interface becomes slightly larger.</em> That accounts for the extra distance from the iPad’s screen.
+							Larger screens that we use at a distance tend to have lower pixel densities. A TV might be as low as 40 pixels per inch! For typical TV-viewing that’s permissible. An iPad’s retina display is around 264ppi while an iPhone’s retina display is 326ppi. <em class="bold">Because the pixels on an iPad are larger (the screen is less dense), the entire interface becomes slightly larger.</em> That accounts for the extra distance from the iPad’s screen.
 						</p>
 					</article>
-					<article>
+					<article id="sub">
 						<h3>Different Dimensions</h3>
 						<p>
 							But every once in a while, using a lower pixel density isn’t enough… a specific design element needs to be even larger. This happened with app icons on the iPad. On the iPhone they’re 60×60, but the iPad’s larger screen offers a lot more space, so there’s a considerable practical (and visual) upside to using 76×76 app icons.
@@ -170,7 +192,7 @@
 				</section>
 				<!-- /.youreye -->
 				
-				<section>
+				<section id="sanity">
 					<h2>Sanity Check?</h2>
 					<p>
 						We’ve just discussed a ton of co-existing complexities for you to reconcile. Fortunately, interface design is just a matter of using density independent units (like pt or dp). It’s more complicated for app icons, but there are templates to help you with that. Here’s a list of resources on these topics:
@@ -178,26 +200,35 @@
 				</section>
 				<!-- /.sanity -->
 				
-				<section>
+				<section id="essential">
 					<figure>
 						<img src="https://cdn-images-1.medium.com/max/1600/1*wConDsJ3q_0Y48rW6xQyvA@2x.png" alt="resources">
 					</figure>
 					<h2>Essential Resources</h2>
 					<p>
-						<a href="https://design.google.com/devices/"><em>Google Device Metrics</em></a>: An impressive list of specs for devices of all kinds (Android, iOS, Mac, Windows, etc.). Get screen dimensions, pixel density, and even the approximate distance the device is held from a user’s eyes. ScreenSiz.es is a similar resource.
+						<a href="https://design.google.com/devices/" class="link"><em class="bold">Google Device Metrics</em></a>: An impressive list of specs for devices of all kinds (Android, iOS, Mac, Windows, etc.). Get screen dimensions, pixel density, and even the approximate distance the device is held from a user’s eyes. ScreenSiz.es is a similar resource.
 					</p>
 					<p>
-						<a href="https://bjango.com/designresources/"><em >Bjango App Icon Templates</em></a>: These design templates (available for all major design software) are immensely comprehensive. Useful both practically and as a reference to the latest specifications for Android, iOS, macOS, tvOS, watchOS, Windows, Windows Phone, and more.
+						<a href="https://bjango.com/designresources/" class="link"><em class="bold">Bjango App Icon Templates</em></a>: These design templates (available for all major design software) are immensely comprehensive. Useful both practically and as a reference to the latest specifications for Android, iOS, macOS, tvOS, watchOS, Windows, Windows Phone, and more.
 					</p>
 					<p>
-						<a href="http://sebastien-gabriel.com/designers-guide-to-dpi/"><em>Designer’s Guide to DPI</em></a>: This extensive guide by <a href="https://medium.com/@KounterB">Sebastien Gabriel</a> covers even more details and practical workflows for Android and iOS designers.
+						<a href="http://sebastien-gabriel.com/designers-guide-to-dpi/" class="link"><em class="bold">Designer’s Guide to DPI</em></a>: This extensive guide by <a href="https://medium.com/@KounterB" class="user-link">Sebastien Gabriel</a> covers even more details and practical workflows for Android and iOS designers.
 					</p>
 					<p>
-						Check out more of the <a href="http://sketchmaster.com/pixel-density/?sm_s=m12c">top pixel density resources</a> for designers.
+						Check out more of the <a href="http://sketchmaster.com/pixel-density/?sm_s=m12c" class="link">top pixel density resources</a> for designers.
 					</p>
-				</section>    
-            </section>
-    </header>
-        </main>
+				</section>
+				<!-- /.essential -->
+			</section>
+		</div>
+	</main> 
+
+	<div class="container">
+		<footer>
+			<p>Reference link : <a href="https://medium.com/@pnowelldesign/pixel-density-demystified-a4db63ba2922#.aqirqteqo">https://medium.com/@pnowelldesign/pixel-density-demystified-a4db63ba2922#.aqirqteqo</a></p>
+		</footer>
+	</div>
+
+	&lt;
 </body>
 </html>

@@ -1,0 +1,13 @@
+.author {
+	margin: 1.43rem auto;
+}
+
+.author:after, .author::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.author .profile, .author .author-profile {
+	float: left;
+}

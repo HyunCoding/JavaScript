@@ -1,0 +1,34 @@
+h1, h2, h3, p, a {
+	color: rgba(0,0,0,0.8);
+}
+
+h1,h2,h3 {
+	font-family: "jaf-bernino-sans",sans-serif;
+}
+
+h1 {
+	font-size: 1.33rem;
+	font-weight: 700;
+	letter-spacing: -.022em;
+	line-height: 1.2;
+}
+
+header .art-header p {
+	font-family: "jaf-bernino-sans",sans-serif;
+	font-weight: 300;
+    font-style: 400;
+    font-size: 1.33rem;
+    line-height: 1.22;
+    letter-spacing: -.022em;
+}
+
+figcaption, .name, .intro{
+	font-family: "jaf-bernino-sans", sans-serif;
+	letter-spacing: 0;
+	line-height: 1.4;
+}
+
+.name {
+	font-weight: 500; 
+	color: rgba(0,0,0,0.8);
+}
