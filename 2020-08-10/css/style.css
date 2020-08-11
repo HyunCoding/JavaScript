@@ -1,5 +1,11 @@
-* {
-	margin: 0;
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+p {
+
 }
 
 header {
@@ -45,7 +51,41 @@ header > nav > ul li {
 #inb {
     position: absolute;
     list-style: none;
-    margin: 10px;
+    width: 195px;
+    padding: 20px 0 10px 15px;
+}
+
+#content {
+    position: relative;
+    background-color: white;
+    margin-left: 220px;
+    min-height: 780px;
+}
+
+.post {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 20px 50px;
+    color: #444;
+    font-size: 18px;
+}
+
+.post h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+    margin: 20px 0 -10px;
+}
+
+.md-theme h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0 5px 0;
+    padding-top: 20px;
+}
+
+.md-theme p {
+    line-height: 150%;
 }
 
 div span li {
